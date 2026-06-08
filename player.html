@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JST | Player Profile</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="player-page">
+    <header class="site-header compact-header">
+      <a class="wordmark" href="index.html" aria-label="JST home">JST</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#talent">Talent</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="index.html#contact">문의하기</a>
+    </header>
+
+    <main class="player-shell">
+      <a class="back-link" href="index.html#talent">Back to Talent</a>
+      <section class="player-detail">
+        <div class="player-photo-wrap">
+          <img id="player-photo" src="players/jung-jiseok.jpg" alt="">
+        </div>
+        <div class="player-profile">
+          <p class="section-label">JST Talent</p>
+          <h1 id="player-name">Player</h1>
+          <dl class="player-meta">
+            <div><dt>Team</dt><dd id="player-team"></dd></div>
+            <div><dt>Position</dt><dd id="player-position"></dd></div>
+            <div><dt>Sport</dt><dd>Volleyball</dd></div>
+          </dl>
+          <div class="profile-panel">
+            <h2>Career</h2>
+            <div class="career-list" id="player-records"></div>
+          </div>
+          <div class="profile-panel">
+            <h2>Career Notes</h2>
+            <p id="player-note"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="players.js"></script>
+  </body>
+</html>

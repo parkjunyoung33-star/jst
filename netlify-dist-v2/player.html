@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JST | Player Profile</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="player-page">
+    <header class="site-header compact-header">
+      <a class="wordmark" href="index.html" aria-label="JST home">JST</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#talent">Talent</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="index.html#contact">문의하기</a>
+    </header>
+
+    <main class="player-shell">
+      <a class="back-link" href="index.html#talent">Back to Talent</a>
+      <section class="player-detail" id="player-detail">
+        <div class="player-photo-wrap">
+          <img id="player-photo" src="players/jung-jiseok.jpg" alt="">
+        </div>
+        <div class="player-profile">
+          <p class="section-label">JST Talent</p>
+          <h1 id="player-name">Player</h1>
+          <dl class="player-meta">
+            <div><dt>Team</dt><dd id="player-team"></dd></div>
+            <div><dt>Position</dt><dd id="player-position"></dd></div>
+            <div><dt>Sport</dt><dd>Volleyball</dd></div>
+          </dl>
+          <div class="profile-panel">
+            <h2>Profile Notes</h2>
+            <p id="player-note">선수의 기록, 주요 성과, 대표 경기, 미디어 링크가 이 영역에 정리됩니다.</p>
+          </div>
+          <div class="profile-panel">
+            <h2>Career Records</h2>
+            <ul>
+              <li>주요 기록 업데이트 예정</li>
+              <li>수상 및 대표 경력 업데이트 예정</li>
+              <li>기사, 영상, SNS 링크 업데이트 예정</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="players.js"></script>
+  </body>
+</html>

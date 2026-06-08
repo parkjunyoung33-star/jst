@@ -1,0 +1,9 @@
+<svg width="360" height="96" viewBox="0 0 360 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">JST Minimal Logo</title>
+  <desc id="desc">Minimal JST wordmark for website header.</desc>
+  <rect width="360" height="96" fill="transparent"/>
+  <text x="0" y="58" fill="#111318" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="58" font-weight="900" letter-spacing="8">JST</text>
+  <rect x="5" y="72" width="116" height="5" fill="#B8182D"/>
+  <text x="150" y="39" fill="#111318" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" letter-spacing="3">SPORTS</text>
+  <text x="150" y="60" fill="#697684" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" letter-spacing="3">AGENCY</text>
+</svg>

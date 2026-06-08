@@ -1,0 +1,87 @@
+{
+  "jung-jiseok": {
+    "name": "정지석",
+    "card": "정지석1.jpg",
+    "detail": "정지석3.jpg"
+  },
+  "heo-subong": {
+    "name": "허수봉",
+    "card": "허수봉2.jpg",
+    "detail": "허수봉3.jpg"
+  },
+  "hwang-taegui": {
+    "name": "황택의",
+    "card": "황택의1.webp",
+    "detail": "황택의3.jpg"
+  },
+  "lim-donghyeok": {
+    "name": "임동혁",
+    "card": "임동혁1.jpg",
+    "detail": "임동혁3.jpg"
+  },
+  "cho-jaeyoung": {
+    "name": "조재영",
+    "card": "조재영1.webp",
+    "detail": "조재영2.jpg"
+  },
+  "kim-minjae": {
+    "name": "김민재",
+    "card": "김민재1.webp",
+    "detail": "김민재2.jpg"
+  },
+  "lim-sungjin": {
+    "name": "임성진",
+    "card": "임성진1.webp",
+    "detail": "임성진3 (2).jpg"
+  },
+  "jeon-jinseon": {
+    "name": "전진선",
+    "card": "전진선1.jpg",
+    "detail": "전진선3.jpg"
+  },
+  "park-gyeongmin": {
+    "name": "박경민",
+    "card": "박경민1.webp",
+    "detail": "박경민3.jpg"
+  },
+  "oh-eunryeol": {
+    "name": "오은렬",
+    "card": "오은렬1.jpg",
+    "detail": "오은렬3.avif"
+  },
+  "lim-jaeyoung": {
+    "name": "임재영",
+    "card": "임재영1.jpg",
+    "detail": "임재영2.webp"
+  },
+  "han-sungjeong": {
+    "name": "한성정",
+    "card": "한성정1.jpg",
+    "detail": "한성정2.jpg"
+  },
+  "kim-youngjun": {
+    "name": "김영준",
+    "card": "김영준1.webp",
+    "detail": "김영준3.webp"
+  },
+  "park-changseong": {
+    "name": "박창성",
+    "card": "박창성1.webp",
+    "detail": "박창성3.jpg"
+  },
+  "lee-sanghyeon": {
+    "name": "이상현",
+    "card": "이상현1.jpg",
+    "detail": "이상현3.avif"
+  },
+  "kim-dohun": {
+    "name": "김도훈",
+    "card": "김도훈1.jpg",
+    "detail": "김도훈2.jpg"
+  },
+  "park-juhyeong": {
+    "name": "박주형",
+    "card": "박주형2.jpg",
+    "detail": "박주형3.jpg"
+  }
+}
