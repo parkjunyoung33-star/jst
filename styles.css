@@ -614,14 +614,14 @@ h3 {
 
 .record-block {
   margin-top: 12px;
-  padding: 22px;
+  padding: 22px 24px 20px;
 }
 
 .record-block h3 {
-  margin: 0 0 14px;
+  margin: 0 0 16px;
   color: var(--ink);
   font-family: "Noto Sans KR", "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", Arial, sans-serif;
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 850;
   letter-spacing: 0;
 }
@@ -639,37 +639,60 @@ h3 {
 
 .career-list {
   display: grid;
-  gap: 22px;
+  gap: 9px;
   padding-top: 2px;
 }
 
 .career-row {
   display: grid;
-  grid-template-columns: 92px minmax(0, 1fr);
-  gap: 26px;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  padding: 0 0 9px;
+  border-bottom: 1px solid rgba(33, 38, 46, .08);
+}
+
+.career-row:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .career-row > strong {
-  color: #20252c;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  min-width: 92px;
+  min-height: 24px;
+  padding: 0 9px;
+  border: 1px solid rgba(33, 38, 46, .1);
+  border-radius: 4px;
+  color: #384250;
+  background: #f3f6f8;
   font-family: "Noto Sans KR", "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", Arial, sans-serif;
-  font-size: 28px;
-  font-weight: 850;
-  line-height: 1;
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.2;
   letter-spacing: 0;
+  white-space: nowrap;
 }
 
 .career-row p {
-  margin: 0 0 12px;
+  margin: 1px 0 0;
   color: var(--ink);
   font-family: "Noto Sans KR", "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 1.62;
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.55;
   letter-spacing: 0;
   word-break: keep-all;
-  overflow-wrap: normal;
+  overflow-wrap: anywhere;
 }
 
+.career-row.empty p {
+  color: var(--sub);
+  font-weight: 650;
+}
 .modal-open {
   overflow: hidden;
 }
@@ -763,12 +786,12 @@ h3 {
 
 .profile-panel {
   margin-top: 14px;
-  padding: 26px;
+  padding: 24px 26px;
 }
 
 .profile-panel h2 {
-  margin-bottom: 16px;
-  font-size: 24px;
+  margin-bottom: 18px;
+  font-size: 23px;
 }
 
 .profile-panel p,
