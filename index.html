@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="JST는 배구를 기반으로 선수의 계약, 커리어, 브랜드 가치를 함께 설계하는 스포츠 매니지먼트 에이전시입니다.">
+    <meta name="description" content="JST는 선수의 계약과 커리어, 그리고 그 이후의 가치까지 함께 설계하는 스포츠 매니지먼트 에이전시입니다.">
     <title>JST | Sports Agency</title>
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -28,7 +28,7 @@
           <div class="hero-copy">
             <p class="eyebrow">JST SPORTS AGENCY</p>
             <h1>선수의 계약과 커리어,<br>그 이후의 가치까지.</h1>
-            <p>JST는 배구를 기반으로 선수의 계약, 이적, 커리어 방향, 브랜드 가치를 함께 설계하는 스포츠 매니지먼트 에이전시입니다.</p>
+            <p>JST는 선수의 계약과 커리어, 그리고 그 이후의 가치까지 함께 설계하는 스포츠 매니지먼트 에이전시입니다.</p>
             <div class="hero-actions">
               <a class="button primary" href="#contact">선수 상담 문의</a>
               <a class="button secondary" href="#services">서비스 보기</a>
@@ -68,6 +68,32 @@
                 <dd>경기력뿐 아니라 이미지, 미디어, 팬덤까지 선수의 가치를 확장합니다.</dd>
               </div>
             </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="numbers-band" aria-labelledby="numbers-title">
+        <div class="numbers-inner">
+          <div class="numbers-heading">
+            <p class="section-label" id="numbers-title">JST BY THE NUMBERS</p>
+          </div>
+          <div class="numbers-grid" aria-label="JST performance indicators">
+            <article>
+              <strong>20</strong>
+              <h2>Managed Athletes</h2>
+            </article>
+            <article>
+              <strong>14</strong>
+              <h2>National Team Players</h2>
+            </article>
+            <article>
+              <strong>4</strong>
+              <h2>League&amp;Champ MVPs</h2>
+            </article>
+            <article>
+              <strong>12</strong>
+              <h2>Best 7 Selections</h2>
+            </article>
           </div>
         </div>
       </section>
@@ -218,12 +244,16 @@
               <div><dt>Sport</dt><dd>Volleyball</dd></div>
             </dl>
             <div class="record-block">
-              <h3>Career</h3>
-              <div class="career-list" id="modal-player-records"></div>
+              <h3>Profile</h3>
+              <dl class="profile-details" id="modal-player-profile-details"></dl>
             </div>
             <div class="record-block">
-              <h3>Career Notes</h3>
-              <p id="modal-player-note"></p>
+              <h3>Player History</h3>
+              <div id="modal-player-history"></div>
+            </div>
+            <div class="record-block">
+              <h3>Awards</h3>
+              <div id="modal-player-awards"></div>
             </div>
           </div>
         </div>
@@ -235,7 +265,6 @@
       const playerProfiles = window.JST_PLAYERS;
 
       const modal = document.getElementById("player-modal");
-      const recordsEl = document.getElementById("modal-player-records");
       document.querySelectorAll(".player-card").forEach((card) => {
         card.addEventListener("click", (event) => {
           const id = new URL(card.href).searchParams.get("id");
@@ -247,13 +276,9 @@
           document.getElementById("modal-player-name").textContent = player.name;
           document.getElementById("modal-player-team").textContent = player.team;
           document.getElementById("modal-player-position").textContent = player.position;
-          document.getElementById("modal-player-note").textContent = player.note;
-          recordsEl.innerHTML = player.records.map((group) => {
-            if (typeof group === "string") {
-              return `<div class="career-row"><strong>--</strong><div><p>${group}</p></div></div>`;
-            }
-            return `<div class="career-row"><strong>${group.year}</strong><div>${group.items.map((item) => `<p>${item}</p>`).join("")}</div></div>`;
-          }).join("");
+          window.JST_RENDER_PROFILE("modal-player-profile-details", player.profile);
+          window.JST_RENDER_LIST("modal-player-history", player.playerHistory);
+          window.JST_RENDER_LIST("modal-player-awards", player.awards);
           modal.setAttribute("aria-hidden", "false");
           document.body.classList.add("modal-open");
         });
